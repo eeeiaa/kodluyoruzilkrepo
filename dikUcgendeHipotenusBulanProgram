@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class main
+{
+    public static void main(String[] args)
+    {
+        double x,y,z,alan,u;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("1. Kenari Giriniz:");
+        x = input.nextInt();
+        System.out.print("2. Kenari Giriniz:");
+        y = input.nextInt();
+        System.out.print("3. Kenari Giriniz:");
+        z = input.nextInt();
+
+        u = x+y+z/2;
+        alan = u*(u-x)*(u-y)*(u-z);
+        System.out.print("Ucgenin Alani:"+alan);
+    }
+}
