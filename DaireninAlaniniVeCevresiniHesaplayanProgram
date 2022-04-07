@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class main
+{
+    public static void main(String[] args)
+    {
+        double r, pi=3.14,alan,cevre,a;
+
+        Scanner input=new Scanner(System.in);
+
+        System.out.print("Dairenin yari capini giriniz:");
+        r=input.nextDouble();
+        alan = pi * r * r;
+        cevre = 2 * pi * r;
+        a = r;
+        a = (pi * ( r * r ) * a ) / 360;
+
+        System.out.println("Dairenin alani: "+alan);
+        System.out.println("Dairenin cevresi: "+cevre);
+        System.out.println("Dairenin merkez acisinin olcusu: "+a);
+    }
+}
