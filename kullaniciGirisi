@@ -1,0 +1,45 @@
+import java.util.Scanner;
+public class main {
+    public static void main(String[] args) {
+        String userName,password,newPassword,secim;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Kullanici Adiniz:");
+        userName = input.nextLine();
+
+        System.out.print("Sifreniz:");
+        password = input.nextLine();
+
+        if (userName.equals("patika") && password.equals("java123")){
+            System.out.print("Giris Yaptiniz.");
+        }
+        else {
+            System.out.println("Bilgileriniz Yanlis.");
+        }
+
+        System.out.println("Sifrenizi Sifirlamak Ister misiniz? Evet/Hayir");
+        secim = input.nextLine();
+
+        if (secim.equals("Evet")){
+            System.out.print("Yeni Sifreyi Giriniz:");
+            newPassword = input.nextLine();
+
+            if (newPassword.equals(password)){
+                System.out.print("Sifre Olusturulamadi,lutfen baske sifre giriniz.");
+            }
+            else if (newPassword.equals("java123")){
+                System.out.print("Sifre Olusturulamadi,lutfen baske sifre giriniz.");
+            }
+            else {
+                System.out.print("Sifre Olusturuldu.");
+            }
+        }
+        else if (secim.equals("Hayir")){
+            System.out.println("Yeni Sifre Olusturulamadi.");
+        }
+        else {
+            System.out.print("Yazim Hatasi");
+        }
+    }
+}
