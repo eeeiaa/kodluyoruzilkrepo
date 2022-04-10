@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class proje {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int heat;
+
+        System.out.print("Sicaklik Giriniz:");
+        heat = input.nextInt();
+
+        if (heat >= 5 && heat <15){
+            System.out.print("Sinemaya Gidebilirsin.");
+        }
+        else if (heat >= 15 && heat <=25){
+            System.out.print("Piknige Gidebilirsin.");
+        }
+        else if (heat > 25){
+            System.out.print("Yuzmeye Gidebilirsin.");
+        }
+        else {
+            System.out.print("Kayaga Gidebilirsin.");
+        }
+    }
+}
