@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class projeckt {
+    public static void main(String[] args) {
+        int sayi, i = 1;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Bir Sayi Girin:");
+        sayi = input.nextInt();
+
+        while (i < sayi) {
+            i++;
+            if (i % 2 != 0) {
+                continue;
+            }
+            System.out.println(i);
+        }
+    }
+}
