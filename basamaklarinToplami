@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class project {
+    public static void main(String[] args) {
+        int sayi, kalan, toplam = 0;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Bir Sayi Girin:");
+        sayi = input.nextInt();
+
+        while (sayi != 0) {
+            kalan = sayi % 10;
+            toplam += kalan;
+            sayi = sayi / 10;
+        }
+        System.out.print("Sayinizin basamaklari toplami: " + toplam);
+    }
+}
