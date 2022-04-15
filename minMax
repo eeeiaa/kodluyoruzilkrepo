@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class project {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int n, nOf, smallNum = 0, bigNum = 0, count = 1;
+
+        System.out.print("Kac tane sayi gireceksiniz:");
+        nOf = input.nextInt();
+
+        while (count <= nOf) {
+            if (nOf > 1) {
+                System.out.print(count + ". Sayiyi Giriniz:");
+                n = input.nextInt();
+                if (n > smallNum && n > bigNum) {
+                    bigNum = n;
+                    if (smallNum == 0) {
+                        smallNum = n;
+                    }
+                }
+                if (n < bigNum && n < smallNum) {
+                    smallNum = n;
+                    if (bigNum == 0) {
+                        bigNum = n;
+                    }
+                }
+            }
+            else {
+                System.out.print("Hata :1'den fazla sayi girmeliydiniz.");
+            }
+            count++;
+        }
+        System.out.println("En Buyuk Sayi:" + bigNum);
+        System.out.print("En Kucuk Sayi:" + smallNum);
+    }
+}
