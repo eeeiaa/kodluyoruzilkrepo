@@ -1,0 +1,17 @@
+public class project {
+    public static void main(String[] args) {
+
+        for (int i = 2; i <= 100; i++) {
+            boolean isError = true;
+            for (int n = 2; n <= i / 2; n++) {
+                if (i % n == 0) {
+                    isError = false;
+                    break;
+                }
+            }
+            if (isError) {
+                System.out.print(i + " ");
+            }
+        }
+    }
+}
